@@ -78,6 +78,13 @@ main{
     width: 70%;
     z-index: -1;
 }
+.shadow{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: hsl(237deg 49% 15% / 35%);
+    z-index: -2;
+}
 .cout-icon{
     width: 150px;
     height: 150px;
@@ -138,6 +145,9 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.computer{
+    display: none;
 }
 .big-text{
     font-size: 3rem;
@@ -209,7 +219,7 @@ main{
     justify-content: center;
     width: 80%;
 }
-@media (max-width: 401px){
+@media only screen and (max-width: 400px) {
     body{
         height: auto;
     }
@@ -219,6 +229,10 @@ main{
     main {
         height: 300px;
         width: 350px;
+    }
+    .shadow{
+        width: 130px;
+        height: 130px;
     }
     .cout-icon {
         width: 130px;

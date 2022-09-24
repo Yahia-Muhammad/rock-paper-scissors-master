@@ -5,6 +5,7 @@ const choseFromYou = document.querySelectorAll("#secound-cout")[0];
 const choseFromComputer = document.querySelectorAll("#secound-cout")[1];
 const yourImg = document.querySelectorAll("#secound-img")[0];
 const computerImg = document.querySelectorAll("#secound-img")[1];
+const shadowIcon = document.querySelector(".shadow");
 let score = document.getElementById("score");
 
 icons.forEach((val, ind) => {
@@ -25,9 +26,10 @@ icons.forEach((val, ind) => {
 function col(you, computer){
     choseFromYou.classList.add(you);
     yourImg.src = `images/icon-${you}.svg`;
+    choseFromComputer.classList.add(computer);
+    computerImg.src = `images/icon-${computer}.svg`;
     setTimeout(() => {
-        choseFromComputer.classList.add(computer)
-        computerImg.src = `images/icon-${computer}.svg`;
+        document.querySelector(".computer").style.display = "flex";
     }, 500);
 
     if(you===computer){
@@ -58,6 +60,7 @@ function resetColFunction(){
     choseFromComputer.classList.remove("paper", "scissors", "rock");
     choseFromComputer.classList.remove("secound");
     computerImg.src = ``;
+    document.querySelector(".computer").style.display = "none";
     document.querySelector("#state").textContent = "";
 }
 
