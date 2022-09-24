@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          <span>Rock</span>
+          <span>Paper</span>
+          <span>Scissors</span>
+        </h1>
+        <div class="score">
+          <h4>score</h4>
+          <h1 id="score">0</h1>
+        </div>
+      </header>
+      <main>
+        <div id="cout-icon" class="cout-icon paper" data-select="paper"><div class="in-icon"><img src="images/icon-paper.svg" alt="paper"></div></div>
+        <div id="cout-icon" class="cout-icon scissors" data-select="scissors"><div class="in-icon"><img src="images/icon-scissors.svg" alt="scissors"></div></div>
+        <div id="cout-icon" class="cout-icon rock" data-select="rock"><div class="in-icon"><img src="images/icon-rock.svg" alt="rock"></div></div>
+      </main>
+    </div>
+    <main class="secound-main">
+      <div><h3>You Picked</h3><div id="secound-cout" class="cout-icon"><div class="in-icon"><img id="secound-img" src="" alt="icon"></div></div></div>
+      <div class="center-main-order">
+        <h1 class="big-text">You&nbsp;<span id="state"></span></h1>
+        <div class="again">Play Again</div>
+      </div>
+      <div><h3>The House Picked</h3><div id="secound-cout" class="cout-icon"><div class="in-icon"><img id="secound-img" src="" alt="icon"></div></div></div>
+    </main>
+    <div class="background-rules">
+      <div class="container-rules">
+        <div class="header-rules">
+          <h2>Rules</h2>
+          <img class="close-rules" src="images/icon-close.svg" alt="close">
+        </div>
+        <div class="detail-rules">
+          <img src="images/image-rules.svg" alt="rules">
+        </div>
+      </div>
+    </div>
+    <div class="rules">Rules</div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
