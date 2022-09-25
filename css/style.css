@@ -11,7 +11,7 @@ body{
 }
 .container{
     margin: 0 auto;
-    width: 600px;
+    width: 700px;
     max-width: 100%;
 }
 header{
@@ -59,8 +59,8 @@ h4{
 main{
     margin: auto;
     text-align: center;
-    height: 350px;
-    width: 400px;
+    height: 450px;
+    width: 500px;
     display: flex;
     justify-content: center;
     position: relative;
@@ -79,15 +79,15 @@ main{
     z-index: -1;
 }
 .shadow{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     background: hsl(237deg 49% 15% / 35%);
     z-index: -2;
 }
 .cout-icon{
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     overflow: hidden;
     display: inline-flex;
@@ -99,8 +99,8 @@ main{
 }
 .in-icon{
     background: #fff;
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -173,9 +173,9 @@ main{
     bottom: 30px;
     right: 30px;
     border: 1px solid hsl(217, 16%, 45%);
-    width: 90px;
-    height: 35px;
-    line-height: 30px;
+    width: 130px;
+    height: 40px;
+    line-height: 40px;
     text-align: center;
     border-radius: 5px;
     text-transform: uppercase;
@@ -222,6 +222,7 @@ main{
 @media only screen and (max-width: 415px) {
     body{
         height: auto;
+        min-height: 740px;
     }
     header{
         margin: 30px auto 115px;
@@ -231,12 +232,12 @@ main{
         width: 350px;
     }
     .shadow{
-        width: 130px;
-        height: 130px;
+        width: 135px;
+        height: 135px;
     }
     .cout-icon {
-        width: 130px;
-        height: 130px;
+        width: 135px;
+        height: 135px;
     }
     .in-icon {
         width: 100px;
