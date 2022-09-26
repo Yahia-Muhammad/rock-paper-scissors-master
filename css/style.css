@@ -256,10 +256,9 @@ main{
         width: 100%;
     }
     .rules {
-        position: absolute;
-        bottom: 0;
-        right: 50%;
-        transform: translate(50%, 0px);
+        left: 0;
+        right: 0;
+        margin: auto;
         z-index: -1;
     }
     .header-rules {
