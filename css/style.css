@@ -256,9 +256,11 @@ main{
         width: 100%;
     }
     .rules {
-        left: 0;
+        position: relative;
+        left: 0px;
         right: 0;
-        margin: auto;
+        bottom: -35px;
+        margin: 50px auto;
         z-index: -1;
     }
     .header-rules {
